@@ -1,0 +1,17 @@
+0.0.0.0:2017
+gzip
+ext .html
+log stdout
+root /var/www/html
+header /api Access-Control-Allow-Origin *
+header /api Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+header /api Access-Control-Allow-Methods "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+proxy  /api prest:3000 {
+    without /api
+}
+header /auth Access-Control-Allow-Origin *
+header /auth Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+header /auth Access-Control-Allow-Methods "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+proxy  /auth auth:4000 {
+    without /auth
+}

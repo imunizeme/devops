@@ -1,0 +1,6 @@
+[submodule "auth"]
+	path = auth
+	url = git@github.com:imunizeme/auth.core.git
+[submodule "prest"]
+	path = prest
+	url = git@github.com:imunizeme/prest.core.git

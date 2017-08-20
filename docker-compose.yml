@@ -49,4 +49,4 @@ services:
         volumes:
           - "./Caddyfile:/etc/Caddyfile"
         ports:
-            - "80:2017"
+            - "80:80"

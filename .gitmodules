@@ -4,3 +4,6 @@
 [submodule "prest"]
 	path = prest
 	url = https://github.com/imunizeme/prest.core.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/imunizeme/frontend.git

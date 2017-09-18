@@ -36,7 +36,7 @@ services:
             - IMUNIZEME_AUTH_HOST=0.0.0.0
             - IMUNIZEME_JWT_KEY=51d7fe292d4883dd6e408542denver
     caddy:
-        image: abiosoft/caddy
+        image: ./frontend
         links:
             - "prest:prest"
             - "auth:auth"

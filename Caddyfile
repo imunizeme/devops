@@ -2,7 +2,7 @@ imunize.me {
     gzip
     ext .html
     log stdout
-    root /var/www/html
+    root /srv
     header /api Access-Control-Allow-Origin *
     header /api Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept, Authorization"
     header /api Access-Control-Allow-Methods "GET,PUT,POST,DELETE,PATCH,OPTIONS"

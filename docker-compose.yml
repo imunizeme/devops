@@ -57,4 +57,5 @@ services:
         volumes:
           - "./Caddyfile:/etc/Caddyfile"
         ports:
+            - "80:80"
             - "443:443"

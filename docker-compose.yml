@@ -1,10 +1,24 @@
 version: "3"
 services:
     postgres:
-        image: "imunizeme/postgres"
+        image: "mdillon/postgis"
         environment:
             - POSTGRES_USER=postgres
             - POSTGRES_DB=imunizeme
+        volumes:
+            - "./data/postgres:/var/lib/postgresql/data"
+    twitterbot:
+        build: ./twitterbot
+        environment:
+            - IMUNIZEME_BOT_MESSAGE_TOKEN=AIzaSyACreSCKUhVFEr9XV82bLItddfqOlYhv9E
+            - IMUNIZEME_BOT_CONSUMER_KEY=zisG94uVzk7uxyXEsHFJPl9XP
+            - IMUNIZEME_BOT_CONSUMER_SECRET=EldErpi1jxbU47SYXx3teYvz5AhUCr4fOXuCetdUnHQTLBaLvt
+            - IMUNIZEME_BOT_ACCESS_TOKEN=70811302-m0T2K93PvoQ1jszzcXRjhDfPmck3tvy4IgT7XBxTP
+            - IMUNIZEME_BOT_TOKEN_SECRET=Y3J3LunHqCZDbSfu7BVKZcD2cqC7ottMZ4MRUVLeFJ66h
+            - IMUNIZEME_PG_HOST=postgres
+            - IMUNIZEME_PG_USER=postgres
+            - IMUNIZEME_PG_DBNAME=imunizeme
+            - IMUNIZEME_PG_PORT=5432
         ports:
             - "5432:5432"
         volumes:

@@ -7,3 +7,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/imunizeme/frontend.git
+[submodule "twitterbot"]
+	path = twitterbot
+	url = https://github.com/imunizeme/twitterbot.git

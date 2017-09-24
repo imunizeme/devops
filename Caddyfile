@@ -1,4 +1,4 @@
-imunize.me {
+www.imunize.me {
     gzip
     ext .html
     log stdout

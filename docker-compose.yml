@@ -7,6 +7,8 @@ services:
             - POSTGRES_DB=imunizeme
         volumes:
             - "./data/postgres:/var/lib/postgresql/data"
+        ports:
+            - "5432:5432"
     twitterbot:
         build: ./twitterbot
         environment:
@@ -19,10 +21,6 @@ services:
             - IMUNIZEME_PG_USER=postgres
             - IMUNIZEME_PG_DBNAME=imunizeme
             - IMUNIZEME_PG_PORT=5432
-        ports:
-            - "5432:5432"
-        volumes:
-            - "./data/postgres:/var/lib/postgresql/data"
     prest:
         build: ./prest
         links:

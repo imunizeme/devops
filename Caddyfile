@@ -3,7 +3,10 @@
     ext .html
     log stdout
     root /srv
-    
+
+    tls {
+        dns cloudflare
+    }
 
     header / {
         Access-Control-Allow-Origin *

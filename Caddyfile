@@ -1,4 +1,4 @@
-0.0.0.0:80, 0.0.0.0:443, imunize.me {
+0.0.0.0:80, 0.0.0.0:443, imunize.me, www.imunize.me {
     gzip
     ext .html
     log stdout

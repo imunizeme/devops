@@ -54,7 +54,7 @@ services:
             - "auth:auth"
         environment: 
           - CLOUDFLARE_EMAIL=felipeweb.programador@gmail.com
-          - CLOUDFLARE_API_KEY=2d6334530a3c322416168748e5452840a8588
+          - CLOUDFLARE_API_KEY=v1.0-e5dd042cca458b44d104e6f03c7bdbfb425a6e6d050bb310c7d4356da475d044-90dcc1f68b6d2f59716fee1733f2c752cbf3d1d5209f1f975c4b0a11d70d2c362c5fc2711ef593b87a4b940d6eeb5b2b2039c3c0d03d955f630faa8bf260b2fb-7af24d5c2638a7c3a0c07ec2b9d247d381038edbc786e51f89a89d34e10a45e0
         volumes:
           - "./Caddyfile:/etc/Caddyfile"
         ports:

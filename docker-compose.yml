@@ -52,6 +52,9 @@ services:
         links:
             - "prest:prest"
             - "auth:auth"
+        environment: 
+          - CLOUDFLARE_EMAIL=felipeweb.programador@gmail.com
+          - CLOUDFLARE_API_KEY=2d6334530a3c322416168748e5452840a8588
         volumes:
           - "./Caddyfile:/etc/Caddyfile"
         ports:

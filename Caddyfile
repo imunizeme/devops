@@ -2,7 +2,7 @@
     gzip
     ext .html
     log stdout
-    root /srv
+    root /home/www
 
     tls {
         dns cloudflare
